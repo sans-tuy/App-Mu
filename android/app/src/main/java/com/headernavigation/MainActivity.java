@@ -4,6 +4,8 @@ import com.facebook.react.ReactActivity;
 
 import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 
+import android.os.Bundle;
+
 public class MainActivity extends ReactActivity {
 
   /**
@@ -13,6 +15,10 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "HeaderNavigation";
+  }
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
   // protected List<ReactPackage> getPackages() {
   //   return Arrays.asList(
